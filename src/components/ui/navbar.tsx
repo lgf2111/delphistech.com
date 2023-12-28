@@ -35,11 +35,7 @@ const renderNav = (nav: NavProps, sheet?: Boolean) => {
       </>
     );
   } else if (nav.button) {
-    element = (
-      <Button className="ms-5" variant="outline">
-        {nav.title}
-      </Button>
-    );
+    element = <Button className="ms-5">{nav.title}</Button>;
   } else {
     element = (
       <NavigationMenuLink className={navigationMenuTriggerStyle()}>
